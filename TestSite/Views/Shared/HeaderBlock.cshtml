@@ -1,0 +1,10 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+
+@model TestSite.Models.Blocks.HeaderBlock
+
+<div>
+    <h1>
+        @Html.PropertyFor(m => m.HeaderName)
+    </h1>
+</div>

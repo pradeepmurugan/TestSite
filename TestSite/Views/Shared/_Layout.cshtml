@@ -1,0 +1,21 @@
+﻿@using TestSite.Models.ViewModels
+@using TestSite.Models.Pages
+@using EPiServer.Core
+
+@model IPageViewModel<BasePage>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+</head>
+
+<body id="page-top">
+
+    @Model.Layout.Header1.HeaderName
+    @RenderBody()
+
+</body>
+
+</html>

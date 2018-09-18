@@ -1,0 +1,13 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using EPiServer.ServiceLocation
+@using EPiServer.DataAbstraction
+@using EPiServer
+@using System.Globalization
+@using EPiServer.Filters
+@using Test_Site.Models.Pages
+
+@model Test_Site.Models.Pages.StandardPage
+<div>
+    @Html.PropertyFor(m => m.ContentArea1)
+</div>

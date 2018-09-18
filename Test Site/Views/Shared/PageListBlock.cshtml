@@ -1,0 +1,12 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+
+@model Test_Site.Models.Blocks.PageListBlock
+
+<div>
+  @foreach(var pair in Model.GetPageNamesAndDescriptions())
+  {
+      <div>@pair.Item1</div>
+      <div>@pair.Item2</div>
+  }
+</div>

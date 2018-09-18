@@ -1,0 +1,11 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using TestSite.Models.ViewModels
+@model IPageViewModel<TestSite.Models.Pages.ArticlePage>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div>
+    @Html.PropertyFor(m => m.CurrentPage.MainBody)
+</div>
